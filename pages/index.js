@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import {BiAddToQueue} from 'react-icons/all'
+import {BiAddToQueue} from 'react-icons/bi'
 import { useEffect, useState } from 'react'
 import TodoList from '../src/Components/TodoList'
 
