@@ -34,8 +34,8 @@ const Home = () => {
       <main className="container">
         <h2 className="d-flex justify-content-between">
           <div>Todos</div>
-          <Link href="/add-todo">
-            <div className="btn-lg btn-success"><BiAddToQueue /> add</div>
+          <Link href="/add">
+            <button className="btn-lg btn-success"><BiAddToQueue /> add</button>
           </Link>
         </h2><hr />
         <TodoList todos={todos} handleCheck={handleCheck} />
