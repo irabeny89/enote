@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { BiEdit, BiTrash } from 'react-icons/bi'
 
-const Todo = ({ sn, todo, done, id, createdAt, handleCheck, handleRemove }) =>
-  <>
+const Todo = ({ sn, todo, done, id, createdAt, handleCheck, handleDelete }) =>
+  <div>
     <div className="text-center">{createdAt}</div>
     <div className="row h5">
       <div className="col-2">{sn}.</div>
@@ -18,11 +18,11 @@ const Todo = ({ sn, todo, done, id, createdAt, handleCheck, handleRemove }) =>
           <BiEdit /> Edit
         </button>
       </Link>
-      <button className="btn btn-danger" onClick={() => handleRemove(id)}>
+      <button className="btn btn-danger" onClick={() => handleDelete(id)}>
         <BiTrash /> Delete
       </button>
     </div>
     <hr />
-  </>
+  </div>
 
 export default Todo;

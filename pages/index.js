@@ -9,10 +9,7 @@ export default function Home() {
   const [todos, setTodos] = useState([])
   const [reload, setReload] = useState(false)
   const toggleDataReFetch = () => setReload(reload => !reload)
-  const handleRemove = id => {
-    removeTodo(id)
-    toggleDataReFetch()
-  }
+  const handleDelete = id => (removeTodo(id), toggleDataReFetch())
   const handleCheck = id => {
     try {
       const todo = getTodos().find(item => item.id === id)
@@ -36,7 +33,7 @@ export default function Home() {
           </Link>
         </h2><hr />
         <TodoList todos={todos} handleCheck={handleCheck} 
-          handleRemove={handleRemove} />
+          handleDelete={handleDelete} />
         <hr />
       </main>
     </>
