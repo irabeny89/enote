@@ -18,9 +18,10 @@ export const getTodos = () => {
 }
 export const saveTodos = (...todoItems) => {
   try {
-    todoItems.length > 1 
-      ? sortByDoneSave(todoItems) 
-      : saveTodoToLocalStorage([...todoItems, ...getTodos()])
+    const todos = getTodos()
+    todos.length > 0 
+      ? sortByDoneSave([...todoItems, ...todos]) 
+      : saveTodoToLocalStorage(todoItems)
   } catch (e) { throw new Error(e) }
 }
 export const removeTodo = id => {
