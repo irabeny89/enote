@@ -12,7 +12,7 @@ export class Todo {
       if (typeof prop === 'string' && prop !== '') return prop
       else throw new Error("Invalid entry")
     } catch (e) { throw new Error(e.message) }
-  }  
+  }
   static validateDone(prop) {
     try {
       if (typeof prop === 'boolean') return prop
