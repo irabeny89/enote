@@ -1,16 +1,17 @@
 import Head from 'next/head'
-import AddTodo from "../src/Components/AddTodo";
-import { useTxtArea } from '../src/hooks/hook.inputs'
-import { useSave } from '../src/hooks/hook.local-storage'
+import Add from "../components/Add";
+import { useTxtArea } from '../hooks/hook.inputs'
+import { useSave } from '../hooks/hook.local-storage'
 
-const AddPage = () => 
-  <> 
-    <Head>
-      <title>Add | Next Todo</title>
-    </Head>
-    <main>
-      <AddTodo {...useTxtArea()} save={useSave()} />
-    </main>
-  </>
-
-export default AddPage;
+export default function AddPage() {
+  return (
+    <>
+      <Head>
+        <title>Add | Next Todo</title>
+      </Head>
+      <main>
+        <Add {...useTxtArea()} save={useSave} />
+      </main>
+    </>
+  )
+}
