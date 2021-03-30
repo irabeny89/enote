@@ -7,8 +7,10 @@ import { useTxtArea } from '../hooks/hook.inputs'
 export default function AddPage() {
   const { inputData, onInputChange } = useTxtArea()
   const inputState = { inputData, onInputChange }
-  const handleSave = () => 
-    (addSaveTodo({ todo: inputData, done: false }), Router.push('/'))
+  const handleSave = () => {
+    addSaveTodo({ todo: inputData, done: false })
+    Router.push('/')
+  }
   return (
     <>
       <Head>
