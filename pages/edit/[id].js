@@ -21,9 +21,10 @@ export default function EditPage() {
     } catch (e) { throw new Error(e.message) }
   }
   useEffect(() => {
-    const { todo: selectedTodoProp } = getTodos().find(todoItem => todoItem.id === id)
-    if (!selectedTodoProp) console.log('No todo with id: %s found', id)
-    setInputData(selectedTodoProp)
+    try {
+      const { todo: selectedTodoProp } = getTodos().find(todoItem => todoItem.id === id)
+      setInputData(selectedTodoProp)
+    } catch (e) { console.error(e), push('/') }
   }, [])
   return (
     <>
