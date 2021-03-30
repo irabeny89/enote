@@ -1,6 +1,7 @@
 {
   "name": "next-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Note taking Nextjs app with with browser local storage for persistence",
   "private": true,
   "scripts": {
     "dev": "next dev",
