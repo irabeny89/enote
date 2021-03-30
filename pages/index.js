@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
       <main className="container">
         <h2 className="d-flex justify-content-between">
-          <div>Todos</div>
+          <div>Note List</div>
           <Link href="/add">
             <button className="btn-lg btn-success"><BiAddToQueue /> Add</button>
           </Link>
