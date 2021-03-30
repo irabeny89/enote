@@ -13,7 +13,7 @@ const Edit = ({ inputData, onInputChange, handleSave }) =>
       </Link>
     </h3><hr />
     <textarea className="form-control" value={inputData}
-      onChange={onInputChange} /><br />
+      onChange={onInputChange} autoFocus /><br />
     <button className="btn-lg btn-block btn-primary"
       onClick={handleSave} disabled={`${inputData}` ? false : true}
     ><GrDocumentUpdate /> Save</button>
