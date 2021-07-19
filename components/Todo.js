@@ -6,7 +6,9 @@ const Todo = ({ sn, todo, done, id, createdAt, handleCheck, handleDelete }) =>
     <div className="text-center">{createdAt}</div>
     <div className="row h5">
       <div className="col-2">{sn}.</div>
-      <div className="col-7 overflow-auto">{todo}</div>
+      <div className="col-7 overflow-auto">
+        {done ? <strike>{todo}</strike> : todo}
+      </div>
       <div className="col-3">
         <input type="checkbox" checked={done}
           onChange={() => handleCheck(id)} />
