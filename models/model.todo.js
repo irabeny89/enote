@@ -1,5 +1,4 @@
 import { randomBytes } from 'crypto'
-
 export class Todo {
   id = randomBytes(8).toString('hex')
   createdAt = new Date().toLocaleString()

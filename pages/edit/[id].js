@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Edit from '../../components/Edit'
 import { useTxtArea } from '../../hooks/hook.inputs'
-import { getTodos, removeTodo, saveTodos } from '../../controllers/crud'
+import { getTodos, removeTodo, saveTodos } from '../../utils'
 
 export default function EditPage() {
   const { inputData, onInputChange, setInputData } = useTxtArea()

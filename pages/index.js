@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { BiAddToQueue } from 'react-icons/bi'
 import { useEffect, useState } from 'react'
 import TodoList from '../components/TodoList'
-import { getTodos, removeTodo, saveTodos } from '../controllers/crud'
+import { getTodos, removeTodo, saveTodos } from '../utils'
 
 export default function Home() {
   const [todos, setTodos] = useState([])

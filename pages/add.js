@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Router from 'next/router';
 import Add from "../components/Add";
-import { addSaveTodo } from '../controllers/crud';
+import { addSaveTodo } from '../utils';
 import { useTxtArea } from '../hooks/hook.inputs'
 
 export default function AddPage() {
