@@ -1,30 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js E Note App
 
-## Getting Started
+Note taking app with browser local storage for persistence.
 
-First, run the development server:
+## Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Preview the app live on [https://enote-beta.vercel.app/](https://dashboard-navy-ten.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Repository: [https://github.com/irabeny89/enote](https://github.com/irabeny89/user-dashboard)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## How to use it?
 
-## Learn More
+Clone the repo and run `pnpm dev` to start the development server.
 
-To learn more about Next.js, take a look at the following resources:
+Deploy it to the cloud with [Vercel](https://vercel.com/) ([Documentation](https://nextjs.org/docs/deployment)).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This app is using [PNPM](https://pnpm.io/) as a package manager.
+You can use NPM or Yarn if you prefer; just delete the `node_modules/` folder and the `package.lock` or `yarn.lock` file. Then run `pnpm install` to install all the dependencies in the package.json file.
