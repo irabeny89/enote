@@ -4,9 +4,9 @@ Note taking app with browser local storage for persistence.
 
 ## Preview
 
-Preview the app live on [https://enote-beta.vercel.app/](https://dashboard-navy-ten.vercel.app/)
+Preview the app live on [https://enote-beta.vercel.app/](https://enote-beta.vercel.app/)
 
-Repository: [https://github.com/irabeny89/enote](https://github.com/irabeny89/user-dashboard)
+Repository: [https://github.com/irabeny89/enote](https://github.com/irabeny89/enote)
 
 ## How to use it?
 
